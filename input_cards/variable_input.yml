@@ -1,0 +1,77 @@
+# Input file for variable settings
+
+# Inform us the name of the variable you want to create, its data size, format and the level of mesh in which the variable must be stored (pay attetion to the identation!):
+
+# data size must be an integer
+# data format must be a string
+# level must be an integer
+
+permeability:
+  type: faces
+  data size: 4
+  data type: float
+  sparse: True
+  level: 0
+
+dirichlet_edges:
+  type: edges
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+dirichlet_nodes:
+  type: nodes
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+dirichlet_nodes_flag:
+  type: nodes
+  data size: 1
+  data type: int
+  sparse: True
+  level: 0
+
+neumann:
+  type: edges
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+neumann_edges:
+  type: edges
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+neumann_nodes:
+  type: nodes
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+neumann_nodes_flag:
+  type: nodes
+  data size: 1
+  data type: int
+  sparse: True
+  level: 0
+
+pressure:
+  type: faces
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
+
+pressure_exact:
+  type: faces
+  data size: 1
+  data type: float
+  sparse: True
+  level: 0
